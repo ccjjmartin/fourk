@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  var themeDir = 'themes/contrib/fourk';
+  var themeDir = 'themes/fourk';
   var paths = {
     js: themeDir + '/js/**/*.js',
     styleguide_js: [
@@ -18,7 +18,7 @@
   };
 
   module.exports = {
-    host: 'http://127.0.0.1:8888/',
+    host: 'http://pattern-lab.fourk.dev/',
     themeDir: themeDir,
     paths: paths,
     sassOptions: {
@@ -32,7 +32,7 @@
     },
     cssConfig: {
       enabled: true,
-      src: themeDir + '/source/**/*.scss',
+      src: themeDir + '/source/_patterns/**/*.scss',
       dest: themeDir + '/dist/',
       flattenDestOutput: true,
       lint: {
@@ -97,8 +97,8 @@
     },
     browserSync: {
       enabled: true,
-      domain: '127.0.0.1:8888',
-      startPath: 'pattern-lab/public/index.html',
+      domain: 'pattern-lab.fourk.dev',
+      startPath: 'index.html',
       reloadDelay: 50,
       reloadDebounce: 750
     }
