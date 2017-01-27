@@ -1,4 +1,4 @@
 card:
   title: Here come the hampsters!
-  body: Look out he can't stop.  No Really his mouth is full of food.
+  body: <p>Look out he can't stop.</p>  <p>No Really his mouth is full of food.</p>
   img: /images/example_image.jpg

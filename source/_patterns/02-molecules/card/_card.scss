@@ -3,18 +3,22 @@
   max-width: 400px;
   padding: 25px;
   margin: 25px;
-  border: 2px solid $gray-dark;
   border-radius: 15px;
 }
 
 .card__title {
-  padding: 10px;
+  line-height: 3;
+  margin: 0;
 }
 
 .card__body {
-  padding: 10px;
+  p {
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
+  }
 }
 
 .card__img {
-  padding: 10px;
+
 }
