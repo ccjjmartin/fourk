@@ -1,0 +1,23 @@
+{% extends "@base/layouts/00-grid.twig" %}
+
+{% block grid_variation %}{% endblock %}
+
+{% block grid_content %}
+  {# Drupal content #}
+  {% if grid_content %}
+    {{ grid_content }}
+  {# PL content in JSON #}
+  {% else %}
+    {% for card in cards %}
+      {% set class = "grid--2 grid__item" %}
+      {% include "@molecules/card/card.twig"
+        with {
+          "image_src": card.image_src,
+          "image_alt": card.image_alt,
+          "title": card.title,
+          "body": card.body,
+        }
+      %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}

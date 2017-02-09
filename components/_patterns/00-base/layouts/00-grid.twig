@@ -5,7 +5,7 @@
   }
 %}
 {% endif %}
-<div class="grid{% if grid_variation %} grid--{{grid_variation}}{% endif %}">
+<div class="grid {% block grid_variation %}{% endblock %}">
   {% if grid_title %}<h2 class="heading-2 grid__title">{{ grid_title }}</h2>{% endif %}
   {% block grid_content %}
     {% for listItem in listItems.five %}

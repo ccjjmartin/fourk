@@ -1,5 +1,18 @@
 .card {
+  margin-bottom: 2%;
   padding: 1em;
+  width: 100%;
+
+  @include medium {
+    flex: 1 0 29%;
+    margin: 0 2% 2% 0;
+    max-width: 29%;
+
+    &:nth-child(2n+1),
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 // Variations

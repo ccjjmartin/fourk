@@ -1,3 +1,7 @@
+image_src:
+  ../../images/sample/thumb-square-fire.jpg
+image_alt:
+  "Fire"
 title:
   "This is a title too"
 body:
